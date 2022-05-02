@@ -1,2 +1,9 @@
 # docker-plex
-Plex Media Server
+
+Docker service definitions for plex media server.
+
+Run following command in this directory: 
+
+```
+docker-compose up -d
+```
