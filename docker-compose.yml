@@ -12,5 +12,6 @@ services:
     volumes:
       - ./config:/config
       - ./tv:/tv
-      - ./movies:/movies
+      - ~/plex-media/:/user-media
+      - /mnt/media0001/plex-media:/external
     restart: unless-stopped
