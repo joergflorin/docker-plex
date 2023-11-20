@@ -1,14 +1,14 @@
-version: "2.1"
+version: "3"
 services:
   plex:
     image: lscr.io/linuxserver/plex
     container_name: plex
     network_mode: host
     environment:
-      - PUID=1000
-      - PGID=1000
-      - VERSION=docker
-      - TZ=Europe/Berlin
+      PUID: 1000
+      PGID: 1000
+      VERSION: docker
+      TZ: Europe/Berlin
     volumes:
       - ./config:/config
       - ./tv:/tv
